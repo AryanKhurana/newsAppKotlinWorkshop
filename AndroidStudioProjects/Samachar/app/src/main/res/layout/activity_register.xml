@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+      <ImageView
+          android:layout_height="340dp"
+          android:layout_width="350dp"
+          android:id="@+id/wion"
+          app:srcCompat="@drawable/wion"
+          android:layout_marginTop="30dp">
+
+      </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_register_email"
+            android:text="Enter your email address"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/activity_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_register_password"
+            android:text="Enter password"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/activity_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword">
+
+        </EditText>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/activity_register_button"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </Button>
+        <TextView
+            android:id="@+id/activity_register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already registered?Login here"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="italic">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
